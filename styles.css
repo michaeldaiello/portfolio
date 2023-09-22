@@ -151,7 +151,6 @@ ul {
 		 grid-template-rows: repeat(auto-fit, 1fr);
 	}
 }
-/* Button Creation*/
  .btn {
 	 font-family: 'Poppins', sans-serif;
 	 font-size: 18px;
@@ -172,7 +171,6 @@ ul {
 	 transform: translateY(2px);
 }
 
-/*Specific Button Properties*/
 
  .btn-fill {
 	 padding: 15px 75px;
