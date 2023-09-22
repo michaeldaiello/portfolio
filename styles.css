@@ -1,0 +1,241 @@
+html, body {
+      margin: 0;
+      padding-bottom: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 10vh;
+      background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content {
+      width: 94%;
+      margin: 0em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+    padding-top: 30px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: lightgrey;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: gray;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.row1 {
+  display: flex;
+}
+
+
+/*Columns*/
+.column {
+  flex: 50%;
+  padding: 40px;
+  height: 350px; 
+}
+
+.column1{
+    flex: 50%;
+    padding: 0px;
+    height: 500px;
+    
+}
+
+/*List*/
+ul {
+    
+  list-style-type: none;
+}
+
+*, *::before, *::after {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: inherit;
+}
+
+ .container {
+     padding-top:30px;
+     padding-bottom: 30px;
+	 min-height: 30vh;
+	 display: grid;
+	 justify-items: center;
+	 align-items: center;
+}
+ .container__btn {
+	 display: grid;
+	 grid-gap: 10px;
+	 justify-items: center;
+	 align-items: center;
+}
+ @media screen and (max-width: 800px) {
+	 .container__btn {
+		 grid-template-columns: 100px;
+		 grid-template-rows: repeat(auto-fit, 1fr);
+	}
+}
+/* Button Creation*/
+ .btn {
+	 font-family: 'Poppins', sans-serif;
+	 font-size: 18px;
+	 border: none;
+	 letter-spacing: 1.5px;
+	 text-transform: uppercase;
+	 border-radius: 12px;
+	 color: #fff;
+	 position: relative;
+	 cursor: pointer;
+	 box-shadow: 0 5px 8px rgba(0, 0, 0, .4);
+     
+}
+ .btn:focus, .btn:focus::after {
+	 outline: none;
+}
+ .btn:active {
+	 transform: translateY(2px);
+}
+
+/*Specific Button Properties*/
+
+ .btn-fill {
+	 padding: 15px 75px;
+	 background: transparent;
+	 color: black;
+	 border: 1px solid black;
+	 z-index: 1;
+	 overflow: hidden;
+     color: grey;
+}
+ .btn-fill:hover span {
+	 color: white;
+	 transition: all 0.2s;
+}
+ .btn-fill::after {
+	 background: black;
+	 content: "";
+	 height: 100%;
+	 width: 100%;
+	 top: 0;
+	 left: -230px;
+	 position: absolute;
+	 transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	 z-index: -1;
+}
+ .btn-fill:hover::after {
+	 left: 0;
+	 transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	 color: #fff;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+
